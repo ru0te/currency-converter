@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const APIKEY = 'fca_live_WWyyg815GnayQU41HfmLWaAs04anndiQNVq9zngZ';
+const APIKEY = import.meta.env.VITE_CURRENCY_API_KEY;
 
 export default function CurrencyConverter() {
   const [amount, setAmount] = useState(0);
